@@ -1,0 +1,116 @@
+/* banner styles  */
+.carousel_item_container {
+    height: 550px;
+    background-image: url(./FashionQuest-main/resources/banner-bg.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.carousel_content {
+    margin: 150px 0 0 0;
+    padding-left: 10%;
+}
+
+.carousel_content h1 {
+    font-size: 70px;
+}
+
+/* features styles  */
+.feature_section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.feature_left_col {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.row_1,
+.row_2 {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.row_1,
+.row_2 img {
+    height: 250px;
+}
+
+.feature_right_col {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+
+/* catagory section  */
+.catagory_section {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+}
+
+.card_section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+/* banner_section */
+.banner_section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+
+.footer_section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+@media screen and (max-width: 500px) {
+    .carousel_item_container {
+        height: 700px;
+        padding: 30px;
+    }
+
+    .carousel_content {
+        margin: 50px 0 0 0;
+        padding-left: 0;
+    }
+
+    .carousel_content h1 {
+        font-size: 40px;
+    }
+
+    /* features styles  */
+    .feature_section {
+        grid-template-columns: 100%;
+    }
+
+    /* catagory section  */
+    .catagory_section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card_section {
+        grid-template-columns: 100%;
+        gap: 20px;
+    }
+
+    /* banner_section */
+    .banner_section {
+        grid-template-columns: 100%;
+        gap: 20px;
+    }
+
+    .footer_section {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+    }
+}
